@@ -60,14 +60,14 @@ session_start();
 // }
 
 //code cart.php
-// $cart = [];
-// if (isset($_SESSION['cart'])) {
-//     $cart = $_SESSION['cart'];
-// }
+//$cart = [];
+//if (isset($_SESSION['cart'])) {
+//$cart = $_SESSION['cart'];
+//}
 
 //hien thi danh sach $cart ra ngoai thanh cac row
-// in gia tien ra VND  - 
-// number_format($product['price'], 0, '', '.');
+// in gia tien ra VND  -
+number_format($product['price'], 0, '', '.');
 
 
 

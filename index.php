@@ -24,7 +24,7 @@ require_once('components/header.php');
                         </div>
                     </div>
                 <?php } ?>
-                    <!-- <div class="col-lg-3">
+                    <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
                             <h5><a href="#">Dried Fruit</a></h5>
                         </div>
@@ -43,7 +43,7 @@ require_once('components/header.php');
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
                             <h5><a href="#">drink fruits</a></h5>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +68,6 @@ require_once('components/header.php');
                 ?>
                             <li data-filter=".<?=$row['slug']?>"><?=$row['name']?></li>
                     <?php } ?>
-                           
                         </ul>
                     </div>
                 </div>
@@ -362,7 +361,7 @@ require_once('components/header.php');
                         </div>
                     </div>
                 </div>
-                <?php } ?>               
+                <?php } ?>
                 
             </div>
         </div>

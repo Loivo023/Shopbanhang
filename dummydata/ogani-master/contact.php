@@ -1,4 +1,3 @@
-<?php //session_start(); ?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -69,7 +68,7 @@
                         <li><a href="blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
-                <li><a href="dummydata/ogani-master/blog.php">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="dummydata/ogani-master/contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -149,17 +148,6 @@
                                 <!-- <div class="hero__search__categories"> -->
                                     <!-- Tất cả danh mục
                                     <span class="arrow_carrot-down"></span> -->
-                                    <select name="danhmuc">
-                                        <option value='*'>Tất cả danh mục</option>
-                                        <?php
-                                        require('./db/conn.php');
-                                        $sql_str = "select * from categories order by name";
-                                        $result = mysqli_query($conn, $sql_str);
-                                            while ($row = mysqli_fetch_assoc($result)){
-                                        ?>
-                                            <option value=<?=$row['id']?>><?=$row['name']?></option>
-                                        <?php } ?>
-                                    </select>
                                 <!-- </div> -->
                                 <input type="text" name="tukhoa" placeholder="Bạn cần tìm gì?">
                                 <button type="submit" class="site-btn">Tìm</button>
@@ -220,38 +208,7 @@
     </header>
     <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <?php   
-    if ($is_homepage){
-        echo '<section class="hero">';
-    } else {
-        echo '<section class="hero hero-normal">';
-    }
-    ?>
     <!-- <section class="hero"> -->
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all">
-                            <i class="fa fa-bars"></i>
-                            <span>Danh mục sản phẩm</span>
-                        </div>
-                        <ul>
-                            <?php
-                                
-                                $sql_str = "select * from categories order by name";
-                                $result = mysqli_query($conn, $sql_str);
-                                while ($row = mysqli_fetch_assoc($result)){
-                            ?>
-                            <li><a href="#"><?=$row['name']?></a></li>
-
-                            <?php } ?>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
                 <!-- <div class="col-lg-6"> -->
                     <nav class="header__menu">
                         <ul>
@@ -265,29 +222,193 @@
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="dummydata/ogani-master/blog.php">Tin tức</a></li>
+                            <li><a href="blog.html">Tin tức</a></li>
                             <li><a href="dummydata/ogani-master/contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
                 <!-- </div> -->
                     
-                    <?php   
-    if ($is_homepage){
-       ?>
- <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
-                        <div class="hero__text">
-                            <span>FRUIT FRESH</span>
-                            <h2>Vegetable <br />100% Organic</h2>
-                            <p>Free Pickup and Delivery Available</p>
-                            <a href="#" class="primary-btn">SHOP NOW</a>
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contact Us</h2>
+                        <div class="breadcrumb__option">
+                            <a href="index.php">Home</a>
+                            <span>Contact Us</span>
                         </div>
                     </div>
-<?php
-    }
-    ?>
-                   
                 </div>
             </div>
         </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Breadcrumb Section End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <span class="icon_phone"></span>
+                        <h4>Phone</h4>
+                        <p>+847051733.49</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <span class="icon_pin_alt"></span>
+                        <h4>Address</h4>
+                        <p>Nguyen Tat Thanh</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <span class="icon_clock_alt"></span>
+                        <h4>Open time</h4>
+                        <p>10:00 am to 23:00 pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <span class="icon_mail_alt"></span>
+                        <h4>Email</h4>
+                        <p>loivo023@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Map Begin -->
+    <div class="map">
+        <iframe
+            src=" https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15679.412934847305!2d106.7061741!3d10.7457926!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6674c017f9%3A0x4432d58807457491!2zxJAuIE5ndXnhu4VuIFThuqV0IFRow6BuaCwgUXXhuq1uIDQsIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1725953728195!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </iframe>
+        <div class="map-inside">
+            <i class="icon_pin"></i>
+            <div class="inside-widget">
+                <h4>NNguyen Tat thanh</h4>
+                <ul>
+                    <li>Phone: +847051733.49</li>
+                    <li>Add: Nguyen Tat thanh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Map End -->
+
+    <!-- Contact Form Begin -->
+    <div class="contact-form spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact__form__title">
+                        <h2>Leave Message</h2>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <textarea placeholder="Your message"></textarea>
+                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Contact Form End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="index.php"><img src="img/logo.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: Nguyen Tat Thanh</li>
+                            <li>Phone: +847051733.49</li>
+                            <li>Email: loivo023@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Sign Up</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

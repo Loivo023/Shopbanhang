@@ -3,7 +3,7 @@
 // echo "xin chao";
 
 
-require('../db/conn.php');
+require('./db/conn.php');
 
 //lay du lieu tu form
 $name = $_POST['name'];
@@ -37,7 +37,7 @@ for ($i = 0; $i < $countfiles; $i++) {
     ## Check file extension
     if (in_array(strtolower($extension), $valid_extensions)) {
 
-        // them vao CSDL - them thah cong moi upload anh len
+        // them vao CSDL - them thanh cong moi upload anh len
         ## Upload file
         //$_FILES['file']['tmp_name']: $_FILES['file']['tmp_name'] - The temporary filename of the file in which the uploaded file was stored on the server.
         if (move_uploaded_file($_FILES['anhs']['tmp_name'][$i], $location)) {
@@ -64,5 +64,5 @@ exit;
 mysqli_query($conn, $sql_str);
 
 //tro ve trang 
-header("location: ./listsanpham.php");
+header("location: listsanpham.php");
 ?>

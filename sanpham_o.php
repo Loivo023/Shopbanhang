@@ -3,7 +3,7 @@
     $is_homepage = false;
     require_once('components/header.php');
 
-    require_once('./db/conn.php');
+    require_once('/db/conn.php');
     $idsp = $_GET['id'];
     $sql_str = "select * from products where id=$idsp";
     $result = mysqli_query($conn, $sql_str);
@@ -20,8 +20,8 @@
                             <?= $row['name'] ?>
                         </h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Trang chủ</a>
-                            <a href="./index.html">Sản phẩm</a>
+                            <a href="/index.html">Trang chủ</a>
+                            <a href="/index.html">Sản phẩm</a>
                             <span>
                                 <?= $row['name'] ?>
                             </span>
@@ -91,7 +91,7 @@
                             <li><b>Weight</b> <span>0.5 kg</span></li>
                             <li><b>Share on</b>
                                 <div class="share">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="https:/www.facebook.com"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
                                     <a href="#"><i class="fa fa-instagram"></i></a>
                                     <a href="#"><i class="fa fa-pinterest"></i></a>
@@ -107,10 +107,10 @@
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
                                     aria-selected="true">Mô tả</a>
                             </li>
-                            <!-- <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
                                     aria-selected="false">Information</a>
-                            </li> -->
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
                                     aria-selected="false">Đánh giá <span>(1)</span></a>
@@ -123,7 +123,7 @@
                                     <?= $row['description'] ?>
                                 </div>
                             </div>
-                            <!-- <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Products Infomation</h6>
                                     <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
@@ -143,7 +143,7 @@
                                         porta. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus
                                         nibh. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__tab__desc">
                                     <h6>Đánh giá sản phẩm (reviews)</h6>
@@ -192,7 +192,7 @@ while($row2 = mysqli_fetch_assoc($result2)) {
                         </div>
                     </div>
                 </div>
-<?php } ?>                
+<?php } ?>
             </div>
         </div>
     </section>

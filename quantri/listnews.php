@@ -34,7 +34,7 @@ function anhdaidien($arrstr,$height){
             </thead>
             <tbody>
             <?php 
-    require('../db/conn.php');
+    require('./db/conn.php');
     $sql_str = "select 
     *, news.id as nid
     from news, newscategories where 

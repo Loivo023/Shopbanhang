@@ -3,7 +3,7 @@
 // echo "xin chao";
 
 
-require('../db/conn.php');
+require('./db/conn.php');
 
 //lay du lieu tu form
 $name = $_POST['name'];
@@ -62,5 +62,5 @@ $sql_str = "INSERT INTO `news` (`title`, `avatar`, `slug`, `sumary`, `descriptio
 mysqli_query($conn, $sql_str);
 
 //tro ve trang 
-header("location: ./listnews.php");
+header("location: listnews.php");
 ?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 require('includes/header.php');
 ?>
 
@@ -13,7 +13,7 @@ require('includes/header.php');
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Thêm mới thương hiệu (brand)</h1>
                     </div>
-                    <form class="user" method="post" action="addbrand.php">                        
+                    <form class="user" method="post" action="addbrand.php">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             id="name" name="name" aria-describedby="emailHelp"
@@ -31,7 +31,7 @@ require('includes/header.php');
 
 </div>
 
-      
+
 <?php
 require('includes/footer.php');
 ?>

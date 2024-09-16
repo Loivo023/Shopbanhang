@@ -90,7 +90,7 @@ $anh = $row['avatar'];
                     <div class="blog__sidebar__item">
                         <h4>Tìm kiếm</h4>
                         <div class="blog__sidebar__item__tags">
-                        <?php 
+                        <?php
                         $sql_str2 = "select * from newscategories order by id";
                         $result2 = mysqli_query($conn, $sql_str2);
                         while ($row2 = mysqli_fetch_assoc($result2)) { ?>

@@ -5,9 +5,9 @@
 $id = $_GET['id'];
 
 //ket noi csdl
-require('../db/conn.php');
+require('./db/conn.php');
 
-$sql_str = "select 
+$sql_str = "select
 * from orders where id=$id";
 // echo $sql_str; exit;   //debug cau lenh
 
@@ -23,7 +23,7 @@ if (isset($_POST['btnUpdate'])) {
 
 
     // cau lenh them vao bang
-    $sql_str = "UPDATE `orders` 
+    $sql_str = "UPDATE `orders`
         SET status =  '$status'
         WHERE `id`=$id
         ";
@@ -36,7 +36,7 @@ if (isset($_POST['btnUpdate'])) {
     mysqli_query($conn, $sql_str);
 
     //tro ve trang 
-    header("location: ./listorders.php");
+    header("location: listorders.php");
 } else {
     require('includes/header.php');
     ?>

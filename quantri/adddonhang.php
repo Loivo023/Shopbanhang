@@ -3,7 +3,7 @@
     // echo "xin chao";
 
    
-    require('../db/conn.php');
+    require('./db/conn.php');
 
     //lay du lieu tu form
     $name = $_POST['name'];

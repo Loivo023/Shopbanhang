@@ -16,7 +16,7 @@ require_once('components/header.php');
                 <div class="breadcrumb__text">
                     <h2>Giỏ hàng</h2>
                     <div class="breadcrumb__option">
-                        <a href="./index.html">Home</a>
+                        <a href="index.html">Home</a>
                         <span>Giỏ hàng</span>
                     </div>
                 </div>
@@ -76,7 +76,7 @@ require_once('components/header.php');
                                             <?= number_format($item['disscounted_price'] * $item['qty'], 0, '', '.') . " VNĐ" ?>
                                         </td>
                                         <td><button class="btn btn-warning">Cập nhật</button></td>
-                                        <td><a href='./deletecart.php?id=<?= $item['id'] ?>' class="btn btn-danger">Xóa</a>
+                                        <td><a href='/deletecart.php?id=<?= $item['id'] ?>' class="btn btn-danger">Xóa</a>
                                         </td>
                                     </tr>
                                 </form>
@@ -87,9 +87,8 @@ require_once('components/header.php');
 
 
                         </table>
-                        <!-- <div class="checkout__order__subtotal">
-                  Subtotal <span>$750.99</span>
-                </div> -->
+                        <div class="checkout__order__subtotal">Subtotal <span>$750.99</span>
+                </div>
                         <div class="checkout__order__total">
                             Tổng tiền: <span>
                                 <?= number_format($total, 0, '', '.') . " VNĐ" ?>
@@ -104,7 +103,7 @@ require_once('components/header.php');
                     </div>
                 </div>
             </div>
-            <!-- </form> -->
+            </form>
         </div>
     </div>
 </section>

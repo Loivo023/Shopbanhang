@@ -6,7 +6,7 @@ $id = $_GET['id'];
 
 //tim trong CSDL brand co id trung
 //ket noi csdl
-require('../db/conn.php');
+require('./db/conn.php');
 
 $sql_str = "select * from brands where id=$id";
 $res = mysqli_query($conn, $sql_str);
@@ -39,7 +39,7 @@ if (isset($_POST['btnUpdate'])){
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Cập nhật thương hiệu (brand)</h1>
                     </div>
-                    <form class="user" method="post" action="#">                        
+                    <form class="user" method="post" action="#">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             id="name" name="name" aria-describedby="emailHelp"
@@ -58,7 +58,7 @@ if (isset($_POST['btnUpdate'])){
 
 </div>
 
-      
+
 <?php
 require('includes/footer.php');
 }

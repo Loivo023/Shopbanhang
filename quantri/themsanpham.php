@@ -13,7 +13,7 @@ require('includes/header.php');
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Thêm mới sản phẩm</h1>
                     </div>
-                    <form class="user" method="post" action="addproduct.php" enctype="multipart/form-data">                        
+                    <form class="user" method="post" action="addproduct.php" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             id="name" name="name" aria-describedby="emailHelp"
@@ -23,7 +23,7 @@ require('includes/header.php');
                     <div class="form-group">
                         <label class="form-label">Các hình ảnh cho sản phẩm</label>
                         <input type="file" class="form-control form-control-user"
-                            id="anhs" name="anhs[]" 
+                            id="anhs" name="anhs[]"
                             multiple>
                     </div>
                     <div class="form-group">
@@ -39,12 +39,12 @@ require('includes/header.php');
                         </textarea>
                     </div>
                     
-                   
+
                     <div class="form-group row">
                         <div class="col-sm-4 mb-sm-0">
                         <input type="text" class="form-control form-control-user"
                             id="stock" name="stock" aria-describedby="emailHelp"
-                            placeholder="Số lượng nhập:"> 
+                            placeholder="Số lượng nhập:">
                         </div>
                         <div class="col-sm-4 mb-sm-0">
                         <input type="text" class="form-control form-control-user"
@@ -57,13 +57,13 @@ require('includes/header.php');
                             placeholder="Giá bán:">
                         </div>
                     </div>
-                   
+
                     <div class="form-group">
                         <label class="form-label">Danh mục:</label>
                         <select class="form-control" name="danhmuc">
                             <option>Chọn danh mục</option>
                             <?php 
-    require('../db/conn.php');
+    require('./db/conn.php');
     $sql_str = "select * from categories order by name";
     $result = mysqli_query($conn, $sql_str);
     while ($row = mysqli_fetch_assoc($result)){
@@ -74,12 +74,12 @@ require('includes/header.php');
                     </div>
                     <div class="form-group">
                     <label class="form-label">Thương hiệu:</label>
-                   
+
                         <select class="form-control" name="thuonghieu">
                         <option>Chọn thương hiệu</option>
 
                         <?php 
-    require('../db/conn.php');
+    require('./db/conn.php');
     $sql_str = "select * from brands order by name";
     $result = mysqli_query($conn, $sql_str);
     while ($row = mysqli_fetch_assoc($result)){
@@ -100,7 +100,7 @@ require('includes/header.php');
 
 </div>
 
-      
+
 <?php
 require('includes/footer.php');
 ?>

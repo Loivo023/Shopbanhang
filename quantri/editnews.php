@@ -5,31 +5,31 @@
 $id = $_GET['id'];
 
 //ket noi csdl
-require('../db/conn.php');
+require('./db/conn.php');
 
-$sql_str = "select 
-* from news where id=$id";
-// echo $sql_str; exit;   //debug cau lenh
+    $sql_str = "select 
+    * from news where id=$id";
+    // echo $sql_str; exit;   //debug cau lenh
 
-$res = mysqli_query($conn, $sql_str);
+    $res = mysqli_query($conn, $sql_str);
 
-$news = mysqli_fetch_assoc($res);
+    $news = mysqli_fetch_assoc($res);
 
-if (isset($_POST['btnUpdate'])){
+    if (isset($_POST['btnUpdate'])){
    //lay du lieu tu form
-   $name = $_POST['title'];
-   $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name)));
-   $summary = $_POST['summary'];
-   $description = $_POST['description'];
-  
-   $danhmuc = $_POST['danhmuc'];
-  
-   //xu ly hinh anh
- 
+    $name = $_POST['title'];
+    $slug = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name)));
+    $summary = $_POST['summary'];
+    $description = $_POST['description'];
 
-   if (!empty($_FILES['anh']['name'])){//có chọn hình ảnh mới - xóa các ảnh cũ
+    $danhmuc = $_POST['danhmuc'];
+
+   //xu ly hinh anh
+
+
+    if (!empty($_FILES['anh']['name'])){//có chọn hình ảnh mới - xóa các ảnh cũ
     //xoa anh cu
-   
+
     unlink($news['avatar']);
     
     
@@ -65,41 +65,41 @@ if (isset($_POST['btnUpdate'])){
     // echo substr($imgs, 0, -1); exit;
     
     // cau lenh them vao bang
-    $sql_str = "UPDATE `news` 
-        SET `title`='$name', 
-        `slug`='$slug', 
-        `description`='$description', 
-        `sumary`='$summary', 
-        `avatar`='$location', 
-        `newscategory_id`=$danhmuc, 
+    $sql_str = "UPDATE `news`
+        SET `title`='$name',
+        `slug`='$slug',
+        `description`='$description',
+        `sumary`='$summary',
+        `avatar`='$location',
+        `newscategory_id`=$danhmuc,
         `updated_at`=now()
         WHERE `id`=$id
         ";
-   } else {
-    $sql_str = "UPDATE `news` 
-        SET `title`='$name', 
-        `slug`='$slug', 
-        `description`='$description', 
-        `sumary`='$summary', 
-        `newscategory_id`=$danhmuc, 
+    } else {
+        $sql_str = "UPDATE `news`
+        SET `title`='$name',
+        `slug`='$slug',
+        `description`='$description',
+        `sumary`='$summary',
+        `newscategory_id`=$danhmuc,
         `updated_at`=now()
         WHERE `id`=$id
         ";
-   }
-   
+    }
 
-//    echo $sql_str; exit;
+
+    //    echo $sql_str; exit;
 
    //thuc thi cau lenh
-   mysqli_query($conn, $sql_str);
+    mysqli_query($conn, $sql_str);
 
    //tro ve trang 
-   header("location: ./listnews.php");
-} else {
-    require('includes/header.php');
+    header("location: listnews.php");
+    } else {
+require('includes/header.php');
 ?>
 
-<div class="container">
+    <div class="container">
 
 <div class="card o-hidden border-0 shadow-lg my-5">
     <div class="card-body p-0">
@@ -110,7 +110,7 @@ if (isset($_POST['btnUpdate'])){
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Cập nhật tin tức</h1>
                     </div>
-                    <form class="user" method="post" action="#" enctype="multipart/form-data">                        
+                    <form class="user" method="post" action="#" enctype="multipart/form-data">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             id="title" name="title" aria-describedby="emailHelp"
@@ -121,13 +121,13 @@ if (isset($_POST['btnUpdate'])){
                     <div class="form-group">
                         <label class="form-label">Ảnh đại diện</label>
                         <input type="file" class="form-control form-control-user"
-                            id="anh" name="anh" 
+                            id="anh" name="anh"
                             >
                         <br>
                         Ảnh hiện tại:
                         <?php $avatar = $news['avatar']; ?>
                         <img src='<?=$avatar?>' height='100px' />
-                       
+
                     </div>
                     <div class="form-group">
                         <label class="form-label">Tóm tắt tin:</label>

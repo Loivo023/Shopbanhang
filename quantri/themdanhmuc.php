@@ -13,7 +13,7 @@ require('includes/header.php');
                     <div class="text-center">
                         <h1 class="h4 text-gray-900 mb-4">Thêm mới danh mục sản phẩm</h1>
                     </div>
-                    <form class="user" method="post" action="addcategory.php">                        
+                    <form class="user" method="post" action="addcategory.php">
                     <div class="form-group">
                         <input type="text" class="form-control form-control-user"
                             id="name" name="name" aria-describedby="emailHelp"
@@ -31,7 +31,7 @@ require('includes/header.php');
 
 </div>
 
-      
+
 <?php
 require('includes/footer.php');
 ?>

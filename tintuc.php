@@ -20,7 +20,7 @@ $anh = $row['avatar'];
                         <?= $row['title'] ?>
                     </h2>
                     <ul>
-                        <!-- <li>Vie</li> -->
+                        <li>Vie</li>
                         <li>
                             <?= $row['created_at'] ?>
                         </li>
@@ -59,9 +59,9 @@ $anh = $row['avatar'];
                                         <?= $row2['name'] ?> (20)
                                     </a></li>
                             <?php } ?>
-                            <!-- <li><a href="#">Food (5)</a></li>
+                            <li><a href="#">Food (5)</a></li>
                             <li><a href="#">Life Style (9)</a></li>
-                            <li><a href="#">Travel (10)</a></li> -->
+                            <li><a href="#">Travel (10)</a></li>
                         </ul>
                     </div>
                     <div class="blog__sidebar__item">
@@ -106,7 +106,7 @@ $anh = $row['avatar'];
                     <img src="<?='quantri/'.$row['avatar']?>" alt="">
                     <?=$row['description']?>
                 </div>
-                <!-- <div class="blog__details__content">
+                <div class="blog__details__content">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="blog__details__author">
@@ -135,7 +135,7 @@ $anh = $row['avatar'];
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -176,7 +176,7 @@ $anh = $row['avatar'];
                 </div>
             </div>
             <?php } ?>
-           
+
         </div>
     </div>
 </section>

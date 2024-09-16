@@ -20,7 +20,7 @@ if (isset($_POST['btDathang'])) {
     $sqli = "insert into orders values (0, 0, '$firstname', '$lastname', '$address', '$phone', '$email', 'Processing', now(), now())";
     // echo $sqli;
     //exit; // mysqli_query($conn, $sqli);
-    //lay id vua duoc them vao 
+    //lay id vua duoc them vao
     if (mysqli_query($conn, $sqli)) {
         $last_order_id = mysqli_insert_id($conn);
         //sau do them vao orer detail

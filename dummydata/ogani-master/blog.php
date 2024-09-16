@@ -58,14 +58,14 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="/index.html">Home</a></li>
-                <li><a href="/shop-grid.html">Shop</a></li>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="/shop-details.html">Shop Details</a></li>
-                        <li><a href="/shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="/checkout.html">Check Out</a></li>
-                        <li><a href="/blog-details.html">Blog Details</a></li>
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul>
                 </li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -221,30 +221,29 @@
     </section>
     <!-- Hero Section End -->
 
-    <!-- Blog Details Hero Begin -->
-    <section class="blog-details-hero set-bg" data-setbg="img/blog/details/details-hero.jpg">
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog__details__hero__text">
-                        <h2>The Moment You Need To Remove Garlic From The Menu</h2>
-                        <ul>
-                            <li>By Thanh Loi</li>
-                            <li>January 14, 2019</li>
-                            <li>8 Comments</li>
-                        </ul>
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Blog</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Home</a>
+                            <span>Blog</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Blog Details Hero End -->
+    <!-- Breadcrumb Section End -->
 
-    <!-- Blog Details Section Begin -->
-    <section class="blog-details spad">
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-5 order-md-1 order-2">
+                <div class="col-lg-4 col-md-5">
                     <div class="blog__sidebar">
                         <div class="blog__sidebar__search">
                             <form action="#">
@@ -271,7 +270,7 @@
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
                                         <h6>09 Kinds Of Vegetables<br /> Protect The Liver</h6>
-                                        <span>MAR 05, 2019</span>
+                                        <span>September 10, 2024</span>
                                     </div>
                                 </a>
                                 <a href="#" class="blog__sidebar__recent__item">
@@ -280,7 +279,7 @@
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
                                         <h6>Tips You To Balance<br /> Nutrition Meal Day</h6>
-                                        <span>MAR 05, 2019</span>
+                                        <span>September 10, 2024</span>
                                     </div>
                                 </a>
                                 <a href="#" class="blog__sidebar__recent__item">
@@ -289,7 +288,7 @@
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
                                         <h6>4 Principles Help You Lose <br />Weight With Vegetables</h6>
-                                        <span>MAR 05, 2019</span>
+                                        <span>September 10, 2024</span>
                                     </div>
                                 </a>
                             </div>
@@ -307,50 +306,107 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-7 order-md-1 order-1">
-                    <div class="blog__details__text">
-                        <img src="img/blog/details/details-pic.jpg" alt="">
-                        <p>Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                            dui. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit
-                            aliquet elit, eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget consectetur
-                            sed, convallis at tellus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada.
-                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Proin eget tortor risus.
-                            Donec rutrum congue leo eget malesuada. Curabitur non nulla sit amet nisl tempus convallis
-                            quis ac lectus. Donec sollicitudin molestie malesuada. Nulla quis lorem ut libero malesuada
-                            feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                        <h3>The corner window forms a place within a place that is a resting point within the large
-                            space.</h3>
-                        <p>The study area is located at the back with a view of the vast nature. Together with the other
-                            buildings, a congruent story has been managed in which the whole has a reinforcing effect on
-                            the components. The use of materials seeks connection to the main house, the adjacent
-                            stables</p>
-                    </div>
-                    <div class="blog__details__content">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="blog__details__author">
-                                    <div class="blog__details__author__pic">
-                                        <img src="img/blog/details/details-author.jpg" alt="">
-                                    </div>
-                                    <div class="blog__details__author__text">
-                                        <h6>Michael Scofield</h6>
-                                        <span>Admin</span>
-                                    </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-2.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="blog__details__widget">
+                                <div class="blog__item__text">
                                     <ul>
-                                        <li><span>Categories:</span> Food</li>
-                                        <li><span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style</li>
+                                        <li><i class="fa fa-calendar-o"></i> September 10, 2024</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <div class="blog__details__social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-twitter"></i></a>
-                                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                                        <a href="#"><i class="fa fa-envelope"></i></a>
-                                    </div>
+                                    <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-3.jpg" alt="">
+                                </div>
+                                <div class="blog__item__text">
+                                    <ul>
+                                        <li><i class="fa fa-calendar-o"></i> May 7,2024</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
+                                    </ul>
+                                    <h5><a href="#">Visit the clean farm in the US</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-1.jpg" alt="">
+                                </div>
+                                <div class="blog__item__text">
+                                    <ul>
+                                        <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
+                                    </ul>
+                                    <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-4.jpg" alt="">
+                                </div>
+                                <div class="blog__item__text">
+                                    <ul>
+                                        <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
+                                    </ul>
+                                    <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-4.jpg" alt="">
+                                </div>
+                                <div class="blog__item__text">
+                                    <ul>
+                                        <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
+                                    </ul>
+                                    <h5><a href="#">The Moment You Need To Remove Garlic From The Menu</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item">
+                                <div class="blog__item__pic">
+                                    <img src="img/blog/blog-6.jpg" alt="">
+                                </div>
+                                <div class="blog__item__text">
+                                    <ul>
+                                        <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                        <li><i class="fa fa-comment-o"></i> 5</li>
+                                    </ul>
+                                    <h5><a href="#">Cooking tips make cooking simple</a></h5>
+                                    <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam
+                                        quaerat </p>
+                                    <a href="#" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -359,68 +415,7 @@
             </div>
         </div>
     </section>
-    <!-- Blog Details Section End -->
-
-    <!-- Related Blog Section Begin -->
-    <section class="related-blog spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title related-blog-title">
-                        <h2>Post You May Like</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-1.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">Cooking tips make cooking simple</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-2.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">6 ways to prepare breakfast for 30</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="blog__item">
-                        <div class="blog__item__pic">
-                            <img src="img/blog/blog-3.jpg" alt="">
-                        </div>
-                        <div class="blog__item__text">
-                            <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
-                            </ul>
-                            <h5><a href="#">Visit the clean farm in the US</a></h5>
-                            <p>Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Related Blog Section End -->
+    <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer spad">
@@ -432,9 +427,9 @@
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Address: Nguyen Tat Thanh</li>
+                            <li>Phone: +847051733.49</li>
+                            <li>Email: loivo023@gmail.com</li>
                         </ul>
                     </div>
                 </div>
@@ -465,13 +460,13 @@
                         <p>Get E-mail updates about our latest shop and special offers.</p>
                         <form action="#">
                             <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
+                            <button type="submit" class="site-btn">Nhap</button>
                         </form>
                         <div class="footer__widget__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
@@ -480,7 +475,7 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>

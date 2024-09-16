@@ -16,7 +16,7 @@ require_once('components/header.php');
                 <div class="breadcrumb__text">
                     <h2>Hoàn thành</h2>
                     <div class="breadcrumb__option">
-                        <a href="./index.html">Home</a>
+                        <a href="index.html">Home</a>
                         <span>Hoàn thành</span>
                     </div>
                 </div>

@@ -146,7 +146,7 @@ while ($row = mysqli_fetch_assoc($result)){
                                             </div>
                                             <div class="latest-product__item__text">
                                                 <h6><?=$row['name']?></h6>
-                                                <!-- <span><?=$row['price']?></span> -->
+                                                <span><?=$row['price']?></span>
                                                 <div class="prices">
                                                     <span class="old"><?=$row['price']?></span>
                                                     <span class="curr"><?= number_format($row['disscounted_price'], 0, '', '.') . " VNĐ" ?></span>
@@ -178,7 +178,7 @@ while ($row = mysqli_fetch_assoc($result)){
                                             </div>
                                         </a>
                                     <?php } ?>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -249,7 +249,7 @@ while ($row = mysqli_fetch_assoc($result)){
                                 </div>
                                 <div class="product__item__text">
                                     <h6><a href="sanpham.php?id=<?=$row['id']?>"><?=$row['name']?></a></h6>
-                                    <!-- <h5><?=$row['price']?></h5> -->
+                                    <h5><?=$row['price']?></h5>
                                     <div class="prices">
                                         <span class="old"><?=$row['price']?></span>
                                         <span class="curr"><?= number_format($row['disscounted_price'], 0, '', '.') . " VNĐ" ?></span>
@@ -277,7 +277,7 @@ $sql_str = "SELECT products.id as pid, products.name as pname, categories.name a
 $result = mysqli_query($conn, $sql_str);
 while ($row = mysqli_fetch_assoc($result)){
     $anh_arr = explode(';', $row['images']);
-?>                                
+?>
                                 <div class="col-lg-4">
                                     <div class="product__discount__item">
                                         <div class="product__discount__item__pic set-bg"
@@ -292,7 +292,7 @@ while ($row = mysqli_fetch_assoc($result)){
                                         <div class="product__discount__item__text">
                                             <span><?=$row['cname']?></span>
                                             <h5><a href="sanpham.php?id=<?=$row['pid']?>"><?=$row['pname']?></a></h5>
-                                            <!-- <div class="product__item__price"><?=$row['disscounted_price']?> <span><?=$row['price']?></span></div> -->
+                                            <div class="product__item__price"><?=$row['disscounted_price']?> <span><?=$row['price']?></span></div>
                                             <div class="prices">
                                                     <span class="old"><?=$row['price']?></span>
                                                     <span class="curr"><?= number_format($row['disscounted_price'], 0, '', '.') . " VNĐ" ?></span>

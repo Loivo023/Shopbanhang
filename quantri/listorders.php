@@ -46,7 +46,7 @@ require('includes/header.php');
             </thead>
             <tbody>
             <?php 
-    require('../db/conn.php');
+    require('./db/conn.php');
     $sql_str = "select 
     * from orders
     order by created_at";
@@ -64,7 +64,7 @@ require('includes/header.php');
                 <td><span class='<?=$row['status']?>'><?=$row['status']?></span></td>
                 
                 <td>
-                    <a class="btn btn-warning" href="vieworders.php?id=<?=$row['id']?>">Xem</a>  
+                    <a class="btn btn-warning" href="vieworders.php?id=<?=$row['id']?>">Xem</a>
                     
                 </td>
                 
@@ -78,9 +78,9 @@ require('includes/header.php');
         </div>
     </div>
 </div>
-         
 
-      
+
+
 <?php
 require('includes/footer.php');
 ?>

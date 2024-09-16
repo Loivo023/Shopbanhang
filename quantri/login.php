@@ -6,7 +6,7 @@ if (isset($_POST["btSubmit"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
     //ket noi csdl
-    require_once("../db/conn.php");
+    require_once("./db/conn.php");
     //cau lenh truy van
     $sql = "select * from admins where email='$email' and password='$password'";
     //thuc thi cau lenh

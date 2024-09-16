@@ -5,7 +5,7 @@
 $id = $_GET['id'];
 
 //ket noi csdl
-require('../db/conn.php');
+require('./db/conn.php');
 
 $sql_str = "select 
 products.id as pid,
@@ -122,7 +122,7 @@ if (isset($_POST['btnUpdate'])){
    mysqli_query($conn, $sql_str);
 
    //tro ve trang 
-   header("location: ./listsanpham.php");
+   header("location: listsanpham.php");
 } else {
     require('includes/header.php');
 ?>
@@ -197,7 +197,7 @@ foreach($arr as $img)
                         <select class="form-control" name="danhmuc">
                             <option>Chọn danh mục</option>
                             <?php 
-    // require('../db/conn.php');
+    // require('./db/conn.php');
     $sql_str = "select * from categories order by name";
     $result = mysqli_query($conn, $sql_str);
     while ($row = mysqli_fetch_assoc($result)){
@@ -219,7 +219,7 @@ foreach($arr as $img)
                         <option>Chọn thương hiệu</option>
 
                         <?php 
-    // require('../db/conn.php');
+    // require('./db/conn.php');
     $sql_str = "select * from brands order by name";
     $result = mysqli_query($conn, $sql_str);
     while ($row = mysqli_fetch_assoc($result)){
