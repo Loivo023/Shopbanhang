@@ -70,7 +70,7 @@
                     </ul>
                 </li>
                 <li><a href="dummydata/ogani-master/blog.php">Blog</a></li>
-                <li><a href="dummydata/ogani-master/contact.php">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -266,7 +266,7 @@
                                 </ul>
                             </li>
                             <li><a href="dummydata/ogani-master/blog.php">Tin tức</a></li>
-                            <li><a href="dummydata/ogani-master/contact.php">Liên hệ</a></li>
+                            <li><a href="contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
                 <!-- </div> -->
