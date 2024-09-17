@@ -27,7 +27,7 @@ require('includes/header.php');
                                     </thead>
                                     <tbody>
                                     <?php 
-    require('./db/conn.php');
+    require('../db/conn.php');
     $sql_str = "select * from categories order by name";
     $result = mysqli_query($conn, $sql_str);
     while ($row = mysqli_fetch_assoc($result)){

@@ -57,8 +57,8 @@
                             <?= $row['name'] ?>
                         </h2>
                         <div class="breadcrumb__option">
-                            <a href="index.html">Trang chủ</a>
-                            <a href="index.html">Sản phẩm</a>
+                            <a href="index.php">Trang chủ</a>
+                            <a href="index.php">Sản phẩm</a>
                             <span>
                                 <?= $row['name'] ?>
                             </span>

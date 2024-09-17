@@ -16,7 +16,7 @@ require_once('components/header.php');
                 <div class="breadcrumb__text">
                     <h2>Giỏ hàng</h2>
                     <div class="breadcrumb__option">
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                         <span>Giỏ hàng</span>
                     </div>
                 </div>
@@ -37,8 +37,19 @@ require_once('components/header.php');
                     <div class="checkout__order">
                         <h4>Your Order</h4>
                         <div class="checkout__order__products">
-                            Products <span>Total</span>
+                        <div class="col-lg-6">
+                            <div class="shoping__continue">
+                                <div class="shoping__discount">
+                                    <h5>Discount Codes</h5>
+                                    <form action="#">
+                                    <input type="text" placeholder="Enter your coupon code">
+                                    <button type="submit" class="site-btn">APPLY COUPON</button>
+                                </form>
+                            </div>
                         </div>
+                    </div>
+                    Products <span>Total</span>
+                </div>
                         <table class="table">
                             <tr>
                                 <th>STT</th>
@@ -76,7 +87,7 @@ require_once('components/header.php');
                                             <?= number_format($item['disscounted_price'] * $item['qty'], 0, '', '.') . " VNĐ" ?>
                                         </td>
                                         <td><button class="btn btn-warning">Cập nhật</button></td>
-                                        <td><a href='/deletecart.php?id=<?= $item['id'] ?>' class="btn btn-danger">Xóa</a>
+                                        <td><a href='deletecart.php?id=<?= $item['id'] ?>' class="btn btn-danger">Xóa</a>
                                         </td>
                                     </tr>
                                 </form>

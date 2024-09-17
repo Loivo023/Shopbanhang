@@ -38,7 +38,7 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="shop-details.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
@@ -54,7 +54,7 @@
                 </ul>
             </div> -->
             <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+                <a href="user/index.php"><i class="fa fa-user"></i> Đăng nhập/Đăng ký</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -63,13 +63,11 @@
                 <li><a href="shop.php">Shop</a></li>
                 <li><a href="#">Pages</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="shop-details.html">Shop Details</a></li>
-                        <li><a href="shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="checkout.html">Check Out</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
+                        <li><a href="cart.php">Shoping Cart</a></li>
+                        <li><a href="checkout.php">Check Out</a></li>
                     </ul>
                 </li>
-                <li><a href="dummydata/ogani-master/blog.php">Blog</a></li>
+                <li><a href="blog.php">Blog</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
         </nav>
@@ -190,7 +188,7 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="shop-details.php"><i class="fa fa-heart"></i> <span>1</span></a></li>
                             <li><a href="cart.php"><i class="fa fa-shopping-bag"></i> <span>
                                 <?php
                                     $cart = [];
@@ -253,19 +251,19 @@
                 </div>
                 <div class="col-lg-9">
                 <!-- <div class="col-lg-6"> -->
+                    <div class="header__top__right__auth">
+                    </div>
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="index.php">Trang chủ</a></li>
                             <li><a href="shop.php">Cửa hàng</a></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="shop-details.html">Shop Details</a></li>
-                                    <li><a href="shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li><a href="cart.php">Shoping Cart</a></li>
+                                    <li><a href="checkout.php">Check Out</a></li>
                                 </ul>
                             </li>
-                            <li><a href="dummydata/ogani-master/blog.php">Tin tức</a></li>
+                            <li><a href="blog.php">Tin tức</a></li>
                             <li><a href="contact.php">Liên hệ</a></li>
                         </ul>
                     </nav>
