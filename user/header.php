@@ -1,19 +1,19 @@
-<?php 
+<?php
 session_start();
  ?>
 
 	 <main>
-	 	<?php 
+	 	<?php
 	 	if(isset($_SESSION["userId"])){
 	 		require 'homepage.php';
 	 	}else{
 	 		require 'logoutdata.php';
-	 	}	 
+	 	}
 
 	 	?>
 	 </main>
 
 
- <?php 
- require 'footer.php'; 
+ <?php
+ require 'footer.php';
  ?>

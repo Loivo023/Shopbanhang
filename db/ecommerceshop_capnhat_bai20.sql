@@ -359,29 +359,44 @@ CREATE TABLE `reviews` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `chats`
+--
+
+CREATE TABLE `chats` (
+  `chat_id` int(11) NOT NULL,
+  `from_id` int(11) NOT NULL,
+  `to_id` int(11) NOT NULL,
+  `message` text NOT NULL,
+  `opened` tinyint(1) NOT NULL DEFAULT 0,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `conversations`
+--
+
+CREATE TABLE `conversations` (
+  `conversation_id` int(11) NOT NULL,
+  `user_1` int(11) NOT NULL,
+  `user_2` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `address` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `status` enum('Active','Inactive') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Active',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `phone`, `address`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'Bùi Công Thành', 'admin@gmail.com', '2023-10-17 01:30:09', '123456', NULL, '', '', 'Active', NULL, NULL);
+  `user_id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(1000) NOT NULL,
+  `p_p` varchar(255) DEFAULT 'user-default.png',
+  `last_seen` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
@@ -480,11 +495,26 @@ ALTER TABLE `reviews`
   ADD KEY `reviews_product_id_foreign` (`product_id`);
 
 --
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- Indexes for table `chats`
+--
+ALTER TABLE `chats`
+  ADD PRIMARY KEY (`chat_id`);
+
+--
+-- Indexes for table `conversations`
+--
+ALTER TABLE `conversations`
+  ADD PRIMARY KEY (`conversation_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -563,12 +593,6 @@ ALTER TABLE `reviews`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- Constraints for dumped tables
 --
 
@@ -592,6 +616,25 @@ ALTER TABLE `products`
 ALTER TABLE `reviews`
   ADD CONSTRAINT `reviews_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
   ADD CONSTRAINT `reviews_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+COMMIT;
+
+--
+-- AUTO_INCREMENT for table `chats`
+--
+ALTER TABLE `chats`
+  MODIFY `chat_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `conversations`
+--
+ALTER TABLE `conversations`
+  MODIFY `conversation_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

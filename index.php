@@ -367,6 +367,7 @@ require_once('components/header.php');
         </div>
     </section>
     <!-- Blog Section End -->
+    <script src="js/tinnhan.js"></script>
 <?php
 
 require_once('components/footer.php');

@@ -41,7 +41,7 @@
                         <p>Get E-mail updates about our latest shop and special offers.</p>
                         <form action="#">
                             <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Sign Up</button>
+                            <button type="submit" class="site-btn">Enter</button>
                         </form>
                         <div class="footer__widget__social">
                         <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>

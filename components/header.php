@@ -54,7 +54,7 @@
                 </ul>
             </div> -->
             <div class="header__top__right__auth">
-                <a href="user/index.php"><i class="fa fa-user"></i> Đăng nhập/Đăng ký</a>
+                <a href="quantri/login.php"><i class="fa fa-user"></i> Đăng nhập/Đăng ký</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -126,7 +126,7 @@
                                 </ul>
                             </div> -->
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
+                                <a href="quantri/login.php"><i class="fa fa-user"></i> Đăng nhập/</a><a href="chatbot/index.php"></i> Đăng ký</a>
                             </div>
                         </div>
                     </div>
