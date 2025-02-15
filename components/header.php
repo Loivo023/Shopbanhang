@@ -8,7 +8,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Đặc sản Thành phố và Vùng quê | Các món truyền thống đặc trưng Thành phố và vùng quê</title>
+    <title>Shop HeartSteel</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -81,7 +81,7 @@
         <div class="humberger__menu__contact">
             <ul>
                 <li><i class="fa fa-envelope"></i> loivo023@gmail.com</li>
-                <li>Shop Đặc sản Thành phố và vùng quê</li>
+                <li>Shop HeartSteel</li>
             </ul>
         </div>
     </div>
@@ -95,8 +95,8 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> loivo023@gmail.com</li>
-                                <li>Shop Đặc sản Thành phố và vùng quê</li>
+                                <li><a href="https://www.gmail.com"><i class="fa fa-envelope"></i> loivo023@gmail.com</li>
+                                <li>Shop HeartSteel</li>
                             </ul>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="index.php"><img src="img/logo.png" alt=""></a>
+                        <a href="index.php"><img src="img/Logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -272,11 +272,10 @@
                     <?php   
     if ($is_homepage){
        ?>
- <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
+ <div class="hero__item set-bg" data-setbg="https://vcdn1-suckhoe.vnecdn.net/2023/02/01/iced-coffee-table-jpeg-1675223-5860-9197-1675223880.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=0p-VbfC6bZCQ8xMg5CZcZA">
                         <div class="hero__text">
-                            <span>FRUIT FRESH</span>
-                            <h2>Vegetable <br />100% Organic</h2>
-                            <p>Free Pickup and Delivery Available</p>
+                            <span>Best Coffee</span>
+                            <h2>100% Coffee</h2>
                             <a href="#" class="primary-btn">SHOP NOW</a>
                         </div>
                     </div>

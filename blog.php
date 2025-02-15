@@ -5,7 +5,7 @@ require_once('components/header.php');
 ?>
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="https://media.licdn.com/dms/image/v2/C5112AQGnYMz5KJacpg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520204851451?e=2147483647&v=beta&t=O_4YIaRolfuUIAW-0ENSYkcSHrKMlUO7AqLf0M7Tn8M">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -35,43 +35,33 @@ require_once('components/header.php');
                             </form>
                         </div>
                         <div class="blog__sidebar__item">
-                            <h4>Categories</h4>
-                            <ul>
-                                <li><a href="index.php">All</a></li>
-                                <li><a href="https://drbaumann.vn/blogs/news/clean-beauty-la-gi">Beauty (20)</a></li>
-                                <li><a href="cart.php">Food (5)</a></li>
-                                <li><a href="https://tamanh.net/lifestyle-la-gi.html">Life Style</a></li>
-                                <li><a href="https://www.goabroad.com/articles/why-traveling-is-important">Travel (10)</a></li>
-                            </ul>
-                        </div>
-                        <div class="blog__sidebar__item">
                             <h4>Recent News</h4>
                             <div class="blog__sidebar__recent">
-                                <a href="https://bagla.vn/chi-tiet-tin/9-Kinds-Of-Vegetables-Protect-The-Liver-374-508.html?lang=VN" class="blog__sidebar__recent__item">
+                                <a href="https://dailycoffeenews.com/2025/01/02/three-questions-with-filmmaker-and-third-space-coffee-owner-brooke-bierhaus-sutton/" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-1.jpg" alt="">
+                                        <img src="https://dailycoffeenews.com/2025/01/02/three-questions-with-filmmaker-and-third-space-coffee-owner-brooke-bierhaus-sutton/" alt="">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>09 Kinds Of Vegetables<br /> Protect The Liver</h6>
-                                        <span>September 10, 2024</span>
+                                        <h6>Three Questions with Filmmaker and Third Space Coffee Owner Brooke Bierhaus Sutton</h6>
+                                        <span> January 2, 2025</span>
                                     </div>
                                 </a>
-                                <a href="https://bagla.vn/chi-tiet-tin/Tips-You-To-Balance-Nutrition-Meal-Day-374-507.html" class="blog__sidebar__recent__item">
+                                <a href="https://dailycoffeenews.com/2025/01/02/iowas-euphoria-coffee-finds-a-happy-home-in-calmar/" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-2.jpg" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>Tips You To Balance<br /> Nutrition Meal Day</h6>
-                                        <span>September 10, 2024</span>
+                                        <h6>lowa’s Euphoria Coffee Finds a Happy Home in Calmar</h6>
+                                        <span>January 2, 2025</span>
                                     </div>
                                 </a>
-                                <a href="https://www.vinmec.com/eng/article/is-eating-vegetables-effective-for-weight-loss-en" class="blog__sidebar__recent__item">
+                                <a href="https://dailycoffeenews.com/2025/01/01/design-details-atomic-coffee-roasters-spreading-energy/" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-3.jpg" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>4 Principles Help You Lose <br />Weight With Vegetables</h6>
-                                        <span>September 10, 2024</span>
+                                        <h6>Design Details: Atomic Coffee Roasters Spreading Energy</h6>
+                                        <span>January 2, 2025</span>
                                     </div>
                                 </a>
                             </div>
@@ -79,11 +69,11 @@ require_once('components/header.php');
                         <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">
-                                <a href="index.php">Apple</a>
-                                <a href="https://drbaumann.vn/blogs/news/clean-beauty-la-gi">Beauty</a>
-                                <a href="index.php">Vegetables</a>
-                                <a href="index.php">Fruit</a>
-                                <a href="index.php">Healthy Food</a>
+                                <a href="index.php">Cà phê đen</a>
+                                <a href="index.php">Cà phê sữa</a>
+                                <a href="index.php">Cappuchino</a>
+                                <a href="index.php">Espresso</a>
+                                <a href="index.php">Latte</a>
                                 <a href="https://tamanh.net/lifestyle-la-gi.html">Lifestyle</a>
                             </div>
                         </div>
@@ -94,96 +84,114 @@ require_once('components/header.php');
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-2.jpg" alt="">
+                                    <img src="https://dailycoffeenews.com/wp-content/uploads/2024/11/roasted-coffee-2.jpg" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> September 10, 2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> January 1, 2025</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://www.myrecipes.com/extracrispy/25-quick-breakfast-recipes-to-make-in-30-minutes-or-less">25 ways to prepare breakfast for 30</a></h5>
-                                    <p>You can make a batch of this blueberry breakfast quinoa in five minutes flat. If blueberries aren't your favorite fruit, try peaches or strawberries or even bananas instead.</p>
-                                    <a href="https://www.pinterest.com/pin/240661173817052669/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="https://dailycoffeenews.com/2025/01/01/study-shows-links-between-coffee-drinking-and-gut-health/">Study Shows Links Between Coffee Drinking and Gut Health</a></h5>
+                                    <p>New research suggests that drinking coffee may have outsized effects on the composition and health of human guts. 
+
+Published in Nature Microbiology, the research shows that coffee consumption is closely linked to the abundance of Lawsonibacter asaccharolyticus, a bacterium that plays an important role in gut health. 
+
+The study illuminates mechanisms by which coffee contributes to the gut microbiome, the collection of bacteria, yeasts and fungi associated with digestion, nutrient absorption, immunity and other physical and mental health issues. By identifying a direct link between coffee and the gut microbe, the study provides a new framework for understanding how diet impacts gut health, according to the authors. </p>
+                                    <a href="https://dailycoffeenews.com/2025/01/01/study-shows-links-between-coffee-drinking-and-gut-health/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-3.jpg" alt="">
+                                    <img src="https://dailycoffeenews.com/wp-content/uploads/2024/12/coffee-research-2024.jpeg" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> May 7,2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> December 31, 2024</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://www.ans.iastate.edu/farms/visiting-farm">Visit the clean farm in the US</a></h5>
-                                    <p>As part of Iowa State University, the farms are intended to be an educational resource for students and the community. In order to ensure the safety of visitors, farm staff, and animals, tours of the farms are available through prior appointment only. We require tours to be scheduled 1 week in advance. To schedule a tour, please call the farm contact at the number provided below. If visitors arrive at the farm unannounced, they are encouraged to call the farm superintendent on arrival. </p>
-                                    <a href="https://www.ans.iastate.edu/farms/visiting-farm" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="">Coffee Research in 2024 Focused on Climate Change, Quality and Human Health</a></h5>
+                                    <p>The vast multidisciplinary world of coffee-related research expanded on all fronts in 2024, yet much of it can be reasonably assigned to one of three categories: green coffee sustainability in the face of climate change; understanding coffee quality; and human health. 
+
+Depending on your perspective or position, one or two of these categories might seem more important than the other/s, yet all three captured the attention of academic researchers this year. 
+
+Continuing DCN’s 2024 Year in Review, here’s a look at some of the biggest coffee-related research news in 2024. For all the latest coffee research, subscribe to the DCN Newsletter. </p>
+                                    <a href="https://dailycoffeenews.com/2024/12/31/coffee-research-in-2024-focused-on-climate-change-quality-and-human-health/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-1.jpg" alt="">
+                                    <img src="https://dailycoffeenews.com/wp-content/uploads/2024/01/Le-Cafe-Coffee-at-One-Dag-04-med.jpg" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> May 4,2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> December 31, 2024</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://www.johnsoulesfoods.com/blog/cooking-tips-for-beginners/">Cooking tips make cooking simple</a></h5>
-                                    <p>Cooking as a beginner doesn’t have to be stressful. With the right tips and practices, you can easily make delicious meals for the whole family to enjoy. Browse the nine easy tips and tricks below to help you in the kitchen! </p>
-                                    <a href="https://www.johnsoulesfoods.com/blog/cooking-tips-for-beginners/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="">Cafe Architecture and Interior Design in 2024 Was Often Inspired by the Menu</a></h5>
+                                    <p>Architects and interior designers in 2024 continued to expand the boundaries — both physical and literal — in the cafe category, where the design language is constantly evolving to meet trends in quality, service and consumption. 
+
+DCN featured dozens of new cafes in our ongoing Design Details series, which highlights some of the most interesting work being done in coffee shop architecture and interior design throughout the world.  </p>
+                                    <a href="https://dailycoffeenews.com/2024/12/31/cafe-architecture-and-interior-design-in-2024-was-often-inspired-by-the-menu/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-4.jpg" alt="">
+                                    <img src="https://dailycoffeenews.com/wp-content/uploads/2024/08/Fiorenzato-F64-grind-by-weight-7.jpg" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> May 4,2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> August 5, 2024</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://www.leithsonline.com/post/how-to-be-a-better-cook">21 Home Cooking Skills: How to Be a Better Cook</a></h5>
-                                    <p>Have you ever wondered how to be a better cook? Contrary to what some celebrity chefs would have you believe, you don’t need to have had an Italian nonna teaching you how to roll pasta when you were still in nappies; and you don’t need to have done ten years’ hard labour under a Michelin-starred French chef in Paris. You just need a willingness to learn. The rest can be taught.‍</p>
-                                    <a href="https://www.leithsonline.com/post/how-to-be-a-better-cook  " class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="">Fiorenzato Makes Sense with New Grind-By-Weight F64 Models</a></h5>
+                                    <p>Italian grinder maker Fiorenzato has added two on-demand grind-by-weight machines to its commercial equipment lineup, the F64 EVO Sense and F64 EVO Pro Sense.
+
+The company’s Sense technology, which debuted last year in Fiorenzato’s AllGround home/prosumer line, adapts to manual changes in the grind setting, automatically optimizing the cutoff timing to hit the prescribed dose weight.</p>
+                                    <a href="https://dailycoffeenews.com/2024/08/05/fiorenzato-makes-sense-with-new-grind-by-weight-f64-models/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-4.jpg" alt="">
+                                    <img src="https://www.worldcoffeeportal.com/getattachment/e213a989-0c30-47f6-82f8-e5f2da213799/neeraj-negi-WTUb1dGZ7dI-unsplash-(1).jpg.aspx?lang=en-GB" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> May 4,2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> 2 January 2025</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://ecolife.posthemes.com/demo8/organic7/fr/smartblog/organic-the-moment-you-need-to-remove-garlic-.html">The Moment You Need To Remove Garlic From The Menu</a></h5>
-                                    <p>With Halloween creeping up and the weather starting to feel colder we want to inspire you to get a little bit creative in the kitchen this festive period, so we’ve treated you to a round-up of our favourite seasonal recipes from our most-loved foodie bloggers. </p>
-                                    <a href="https://ecolife.posthemes.com/demo8/organic7/fr/smartblog/organic-the-moment-you-need-to-remove-garlic-.html" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="">Indian coffee exports surpass $1bn for the first time</a></h5>
+                                    <p> 
+Indian coffee exports have exceeded $1bn for the first time amid heightened robusta prices globally and stockpiling from European customers ahead of EUDR implementation. 
+ 
+
+Total coffee exports increased 12% year-on-year to $1.28bn during the eight months ended 30 November 2024, according to the Centre for Monitoring Indian Economy (CMIE) think tank. Turkey, the UAE, Italy and Russia were among the largest importers of Indian coffee during the period.  </p>
+                                    <a href="https://www.worldcoffeeportal.com/Latest/News/2025/January-(1)/Indian-coffee-exports-surpass-$1bn-for-the-first-t" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="blog__item">
                                 <div class="blog__item__pic">
-                                    <img src="img/blog/blog-6.jpg" alt="">
+                                    <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/12e4/live/0d8b2090-bee3-11ef-9880-bd78436cd924.jpg.webp" alt="">
                                 </div>
                                 <div class="blog__item__text">
                                     <ul>
-                                        <li><i class="fa fa-calendar-o"></i> May 4,2024</li>
+                                        <li><i class="fa fa-calendar-o"></i> 20 December 2024</li>
                                         <li><i class="fa fa-comment-o"></i> 5</li>
                                     </ul>
-                                    <h5><a href="https://shankitchen.com/cooking-tips-tricks/five-basic-things-for-easy-cooking/">Cooking tips make cooking simple</a></h5>
-                                    <p>Sounds really simple but it is so disappointing to expect a firm hard-boiled egg and find a runny yolk, or vice versa for that matter. The longer the duration of the boiling time, the firmer the egg will be. For hard-boiled eggs, place them in a saucepan filled with normal temperature tap water. Bring the water to a boil, and then set the timer for at least 7 minutes to upto 10 minutes. Once the egg is cooked through, place it in cold water to stop it from overcooking.</p>
-                                    <a href="https://shankitchen.com/cooking-tips-tricks/five-basic-things-for-easy-cooking/" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
+                                    <h5><a href="">Starbucks baristas launch strike in US, union says</a></h5>
+                                    <p>More than 11,000 Starbucks baristas in the US have begun a five-day strike in a dispute over pay and working conditions.
+
+The walk outs began on Friday at stores in Los Angeles, Chicago, and Seattle, Starbucks Workers United said. The union added the strike action would spread each day and reach hundreds of stores by Christmas Eve unless a deal is reached.</p>
+                                    <a href="https://www.bbc.com/news/articles/cevgzweexdno" class="blog__btn">READ MORE <span class="arrow_right"></span></a>
                                 </div>
                             </div>
                         </div>

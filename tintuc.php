@@ -20,7 +20,7 @@ $anh = $row['avatar'];
                         <?= $row['title'] ?>
                     </h2>
                     <ul>
-                        <li>Vie</li>
+                        <li>Viet Nam</li>
                         <li>
                             <?= $row['created_at'] ?>
                         </li>
@@ -46,25 +46,6 @@ $anh = $row['avatar'];
                         </form>
                     </div>
                     <div class="blog__sidebar__item">
-                        <h4>Categories</h4>
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <?php
-
-                            $sql_str2 = "select * from newscategories order by id";
-                            $result2 = mysqli_query($conn, $sql_str2);
-                            while ($row2 = mysqli_fetch_assoc($result2)) {
-                                ?>
-                                <li><a href="#">
-                                        <?= $row2['name'] ?> (20)
-                                    </a></li>
-                            <?php } ?>
-                            <li><a href="#">Food (5)</a></li>
-                            <li><a href="#">Life Style (9)</a></li>
-                            <li><a href="#">Travel (10)</a></li>
-                        </ul>
-                    </div>
-                    <div class="blog__sidebar__item">
                         <h4>Tin mới</h4>
                         <div class="blog__sidebar__recent">
 
@@ -84,18 +65,6 @@ $anh = $row['avatar'];
                                 </div>
                             </a>
                             <?php } ?>
-                            
-                        </div>
-                    </div>
-                    <div class="blog__sidebar__item">
-                        <h4>Tìm kiếm</h4>
-                        <div class="blog__sidebar__item__tags">
-                        <?php 
-                        $sql_str2 = "select * from newscategories order by id";
-                        $result2 = mysqli_query($conn, $sql_str2);
-                        while ($row2 = mysqli_fetch_assoc($result2)) { ?>
-                            <a href="#"><?=$row2['name']?></a>
-                        <?php } ?>
                             
                         </div>
                     </div>
@@ -122,15 +91,13 @@ $anh = $row['avatar'];
                         <div class="col-lg-6">
                             <div class="blog__details__widget">
                                 <ul>
-                                    <li><span>Categories:</span> Food</li>
-                                    <li><span>Tags:</span> All, Trending, Cooking, Healthy Food, Life Style</li>
+                                    <li><span>Categories:</span> Drink</li>
+                                    <li><span>Tags:</span> All, Trending, Life Style</li>
                                 </ul>
                                 <div class="blog__details__social">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.google.com"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.envelope.com"><i class="fa fa-envelope"></i></a>
                                 </div>
                             </div>
                         </div>

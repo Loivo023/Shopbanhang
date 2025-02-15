@@ -5,12 +5,12 @@ require_once('components/header.php');
 ?>
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <section class="breadcrumb-section set-bg" data-setbg="https://media.licdn.com/dms/image/v2/C5112AQGnYMz5KJacpg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520204851451?e=2147483647&v=beta&t=O_4YIaRolfuUIAW-0ENSYkcSHrKMlUO7AqLf0M7Tn8M">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Organi Shop</h2>
+                        <h2>Shop HeartSteel</h2>
                         <div class="breadcrumb__option">
                             <a href="index.php">Home</a>
                             <span>Shop</span>
