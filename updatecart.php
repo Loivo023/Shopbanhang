@@ -18,3 +18,4 @@ for ($i = 0; $i < count($cart); $i++) {
 $_SESSION['cart'] = $cart;
 
 header("Location: cart.php");
+
