@@ -19,7 +19,7 @@
         for ($i = 0; $i < count($cart); $i++) {
             // print_r($cart[$i]);
             if ($cart[$i]['id'] == $id) {
-                $cart[$i]['qty']+= $qty; 
+                $cart[$i]['qty']+= $qty;
                 $isFound = true;
                 break;
             }
